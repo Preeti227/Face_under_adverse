@@ -14,7 +14,7 @@ from utils.preprocessing import denoise_if_needed
 
 from insightface.app import FaceAnalysis
 
-DEFAULT_REF_DIR = r"C:\Users\parth\Downloads\test2"
+DEFAULT_REF_DIR = r"C:\Users\parth\Downloads\Technologia_Dataset"
 
 # Initialize FaceAnalysis only once
 app = FaceAnalysis(name='buffalo_l')
