@@ -1,10 +1,9 @@
-import glob
+import cv2
+import matplotlib.pyplot as plt
 from itertools import combinations
 import os
 import random
-
-import cv2
-from matplotlib import pyplot as plt
+from glob import glob
 
 def generate_pairs_from_reference(ref_dir, max_negative_pairs_per_identity=5):
     identity_folders = sorted([f for f in os.listdir(ref_dir) if os.path.isdir(os.path.join(ref_dir, f))])
@@ -62,7 +61,7 @@ def show_image_pair(img1_path, img2_path, title1, title2, label_text):
     plt.suptitle(label_text, fontsize=16)
     plt.tight_layout()
     plt.show()
-    
+
 def show_positive_pairs(pairs, num_to_show=5):
     pos_pairs = [pair for pair in pairs if pair[2] == 1]
     for i, (img1, img2, _) in enumerate(pos_pairs[:num_to_show]):
