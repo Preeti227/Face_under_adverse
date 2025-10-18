@@ -1,3 +1,4 @@
 # Ignore the 'test2' directory
 test2/
 Technologia_Dataset/
+app/__pycache__/live_face_match.cpython-313.pyc
